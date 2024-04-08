@@ -22,8 +22,8 @@ public class MainApp {
         User user3 = new User("User3", "Lastname3", "user3@mail.ru");
         User user4 = new User("User4", "Lastname4", "user4@mail.ru");
 
-        List<User> listUsers = userService.listUsers();
-        for (User user : listUsers) {
+        List<User> userList = userService.listUsers();
+        for (User user : userList) {
             System.out.println("Id = " + user.getId());
             System.out.println("First Name = " + user.getFirstName());
             System.out.println("Last Name = " + user.getLastName());
